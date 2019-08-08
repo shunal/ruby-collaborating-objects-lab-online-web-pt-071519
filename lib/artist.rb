@@ -16,7 +16,7 @@ class Artist
   
   def songs
     Song.all.detect do |song|
-      binding.pry
+      song.artist
     end  
   end
 
