@@ -16,7 +16,7 @@ class Artist
   
   def songs
     Song.all.detect do |song|
-      song.artist
+      song.artist == self
     end  
   end
 
